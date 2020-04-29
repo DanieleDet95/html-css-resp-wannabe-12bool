@@ -1,0 +1,119 @@
+/* Regole generali */
+h1 {
+  margin: 37px 0;
+}
+h3 {
+  margin: 22px 0;
+}
+img {
+  height: 200px;
+}
+/* Fine regole generali */
+
+/* COMMON */
+.container{
+  max-width: 1246px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.grey {
+  background-color: #f9f9f9;
+}
+.row {
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#lezioni,
+#why,
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* BLOCCO PERCHE */
+#why .row img {
+  margin-top: 80px;
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+  height: 260px;
+}
+
+/* Media query tablet */
+@media all and (min-width: 768px) and (max-width: 992px){
+  body,
+  .container{
+    background: gray;
+    color: white;
+    font-size: 20px;
+  }
+  .container.grey{
+    background: black;
+    font-size: 20px;
+  }
+  h1{
+    color: yellow;
+    margin: 20px;
+  }
+  h3 {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  img{
+    height: 150px;
+  }
+  #steps div{
+    padding: 20px;
+  }
+  #why .row img{
+    height: 200px;
+    margin-top: 10px;
+  }
+  #why hr{
+    display: none;
+  }
+}
+
+/* Media query cellulare */
+@media all and (max-width: 768px){
+  body,
+  .container{
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .container.grey{
+    margin-top: 20px;
+    background: gray;
+    font-size: 20px;
+  }
+  h1{
+    color: red;
+    margin: 20px;
+  }
+  h3 {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  img{
+    margin: 20px;
+    height: 110px;
+  }
+  #steps div{
+    padding: 20px;
+  }
+  #why .row img{
+    height: 150px;
+    margin-top: 10px;
+  }
+}
